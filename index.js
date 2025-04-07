@@ -38,7 +38,7 @@ app.post('/signup', async (req, res) => {
 
     try {
         const { Item } = await dynamo.send(new GetCommand({
-            TableName: 'Users',
+            TableName: 'testusers',
             Key: { email }
         }));
 
