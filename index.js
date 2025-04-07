@@ -61,6 +61,10 @@ app.post('/signup', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('✅ Auth API is running');
+});
+
 // 🔐 LOGIN
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
